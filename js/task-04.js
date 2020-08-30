@@ -9,10 +9,10 @@ const counterRef = document.querySelector("#value");
 let counterValue = Number(counterRef.textContent);
 
 incrementBtnRef.addEventListener("click", () => {
-  counterValue += Number(incrementBtnRef.textContent);
+  counterValue += 1;
   counterRef.textContent = counterValue;
 });
 decrementBtnRef.addEventListener("click", (event) => {
-  counterValue += Number(decrementBtnRef.textContent);
+  counterValue -= 1;
   counterRef.textContent = counterValue;
 });
